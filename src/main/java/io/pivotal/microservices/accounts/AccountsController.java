@@ -70,6 +70,7 @@ public class AccountsController {
 	@RequestMapping(value = "/CuentaCorriente/{cta}", method = RequestMethod.GET, produces = "application/json")
 	public CuentaParser AS400query(@PathVariable("cta") String cta) {				
 		parser.traslateInput(cta);
+		logger.info("merge");
 		AtrJava atr= adapterAtrJava.getAdapterAtrJava();
 		int rc = atr.callService(parser.getNombreServicio(), parser.getNombreUsuario(), parser.getNombreAplicacion(), parser.getTimeout(), parser.getInput().length(),parser.getInput() );
 	    parser.setOutput(atr.getRequest());
