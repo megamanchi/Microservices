@@ -81,6 +81,7 @@ public class AccountsController {
 	    logger.info("merge3");
 	    logger.info("merge3");
 	    logger.info("merge5");
+		   logger.info("merge5");
 		return cuenta;
 	}
 
