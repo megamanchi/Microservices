@@ -76,7 +76,6 @@ public class AccountsController {
 	    parser.setOutput(atr.getRequest());
 	    CuentaParser cuenta= parser.traslateOutput();
 		logger.info("merge");
-			logger.info("merge1");
 		return cuenta;
 	}
 
