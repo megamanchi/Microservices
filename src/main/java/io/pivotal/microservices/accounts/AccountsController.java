@@ -77,6 +77,9 @@ public class AccountsController {
 	    CuentaParser cuenta= parser.traslateOutput();
 		logger.info("merge");
 	    logger.info("merge2");
+	    logger.info("merge3");
+	    logger.info("merge3");
+	    logger.info("merge3");
 		return cuenta;
 	}
 
