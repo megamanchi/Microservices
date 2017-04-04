@@ -75,12 +75,7 @@ public class AccountsController {
 		int rc = atr.callService(parser.getNombreServicio(), parser.getNombreUsuario(), parser.getNombreAplicacion(), parser.getTimeout(), parser.getInput().length(),parser.getInput() );
 	    parser.setOutput(atr.getRequest());
 	    CuentaParser cuenta= parser.traslateOutput();
-		logger.info("merge");
 		
-		
-		logger.info("mergeA");
-		logger.info("mergeB");
-		logger.info("mergeC");
 		return cuenta;
 	}
 
